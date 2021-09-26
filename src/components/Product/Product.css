@@ -1,0 +1,18 @@
+.container-producto > div {
+    float: left;
+    width: 100%;
+}
+
+.container-producto {
+    float: left;
+    width: 20%;
+    margin: 25px;
+    box-shadow: 1px 1px 6px #b5a9a9;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-producto img {
+    width: 280px;
+}
