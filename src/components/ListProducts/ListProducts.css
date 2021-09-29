@@ -1,0 +1,18 @@
+.container-general {
+    list-style-type: none;
+    display: flex;
+    padding: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    display: -webkit-inline-box;
+}
+
+p {
+    display: flow-root;
+    position: fixed;
+}

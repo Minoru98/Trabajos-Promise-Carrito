@@ -1,13 +1,33 @@
-import React, {Component} from 'react';
-import NavBar from '../NavBar/NavBar';
+import React from 'react'
+//Import components 
+import './CartWidget.css';
+import ItemCount from '../ItemCount/ItemCount';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Button } from '@mui/material';
 
-export default class CartWidget extends Component {
-    render(){
-        return(
-            <div>
-                <NavBar/>
-            </div>
 
-        )
-    }
+const CartWidget = ({ cart, setCart }) => {
+  return (
+    <div className="cart">
+         <Button variant="contained">
+             <ShoppingCartIcon> Start </ShoppingCartIcon>
+             {cart.length === 0 ? (<p>0</p>
+             
+    
+       ) : (
+         cart.map((producto) => (
+           <ItemCount
+             key={producto.id}
+              producto={producto}
+             cart={cart}
+              setCart={setCart}
+           />
+         ))
+      )}
+         </Button>
+    </div>
+
+  )
 }
+
+export default CartWidget;

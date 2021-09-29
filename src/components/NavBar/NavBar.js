@@ -1,17 +1,17 @@
-import logo from '../../assets/logo192.png';
+import logo from '../../assets/logo192.png'
 import './NavBar.css'
 //External components
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import Cart from '@mui/icons-material/ShoppingCart';
+import { AppBar } from '@material-ui/core';
+import { Toolbar } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 
 const NavBar = (props) => {
 
   return (
     <header>
+      <div> 
         <AppBar position="static" className="main-navbar">
         <Toolbar>
           <Typography variant="h6">
@@ -30,14 +30,10 @@ const NavBar = (props) => {
          <div className="container-search">
              Buscar <input type="search"></input>
          </div>
-         <div className="cart-buttonNav">
-         <Button variant="contained">
-         <Cart> Start </Cart>
-          <p>1</p>
-         </Button>
-         </div>
+        
         </Toolbar>
       </AppBar>   
+     </div>
     </header>
   );
 }
